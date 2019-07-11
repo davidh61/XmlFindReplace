@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XmlFindReplace": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\config dotnet dotnet.cli runner type"
+    }
+  }
+}
