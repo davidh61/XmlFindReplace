@@ -32,9 +32,12 @@ namespace FindReplace
 						var xmlFileService = new XmlFileService();
 
 						xmlFileService.ParseFile(xmlConfig, directory);
+
+						return;
 					}
 				}
 
+				Console.WriteLine("Configuration file is not valid");
 				return;
 			}
 

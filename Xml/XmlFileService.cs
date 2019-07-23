@@ -96,9 +96,9 @@ namespace FindReplace.Xml
 
 				if (xmlElement != null)
 				{
-					var xmlElementAttributeValue = xmlElement.GetAttribute(AttributeName);
+					var xmlElementAttribute = xmlElement.GetAttributeNode(AttributeName);
 
-					if (xmlElementAttributeValue != null && xmlElementAttributeValue == FindText)
+					if (xmlElementAttribute != null && xmlElementAttribute.Value == FindText)
 					{
 						xmlElement.SetAttribute(AttributeName, ReplaceText);
 						hasFileUpdated = true;
